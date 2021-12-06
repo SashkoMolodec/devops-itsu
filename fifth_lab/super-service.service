@@ -1,0 +1,11 @@
+[Unit]
+Description=Super service
+After=network.target
+
+[Service]
+ExecStart=/vagrant/super-service.sh
+Restart=on-failure
+User=vagrant
+
+[Install]
+WantedBy=multi-user.target
