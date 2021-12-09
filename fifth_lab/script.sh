@@ -1,7 +1,7 @@
-mv /vagrant/super-service.service /lib/systemd/system/
+mv /vagrant/folder-sync.service /lib/systemd/system/
 systemctl daemon-reload
-systemctl start super-service
-systemctl enable super-service
+systemctl start folder-sync
+systemctl enable folder-sync
 
 LOG=/var/log/logged-in.log
 touch $LOG
