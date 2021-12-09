@@ -6,7 +6,8 @@ sudo yum install mod_ssl -y
 sudo yum install firewalld
 
 sudo mkdir /var/www/ssl-test
-sudo cp -f /vagrant/index.html /var/www/ssl-test/index.html
+#sudo cp -f /vagrant/index.html /var/www/ssl-test/index.html
+sudo cp -f /vagrant/index.html /usr/share/httpd/noindex/index.html
 
 sudo systemctl enable firewalld
 sudo systemctl start firewalld
