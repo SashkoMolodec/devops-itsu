@@ -1,0 +1,8 @@
+# SOCKS / SSH tunnel
+ssh -D 1337 -N -p3322 root@yoko.ukrtux.com
+
+# Proxy (local)
+ssh -R 10022:localhost:22 -p 3322 root@yoko.ukrtux.com
+
+# Back with reverse proxy (remote)
+ssh -p 10022 sashkoMolodec@localhost
